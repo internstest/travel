@@ -23,43 +23,45 @@
 </head>
 <body>
 	<!-- NAVBAR SECTION START -->
-	<nav>
-		<div>
-			<a href="index.html"><img src="./images/logo.png"></a>
-			<button>
+	<nav class="navbar navbar-expand-lg" id="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html" id="logo"><img src="./images/logo.png"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
 				<span><i class="fa-solid fa-bars"></i></span>
 			</button>
-			<div>
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
+			<div class="collapse navbar-collapse" id="#mynavbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li>
-						<a href="index.html">Booking</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Booking</a>
 					</li>
-					<li>
-						<a href="index.html">Packages</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Packages</a>
 					</li>
-					<li>
-						<a href="index.html">Services</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Services</a>
 					</li>
-					<li>
-						<a href="index.html">Gallary</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Gallary</a>
 					</li>
-					<li>
-						<a href="index.html">About</a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">About</a>
 					</li>
 				</ul>
-				<form>
-					<input type="text" name="searchbar" placeholder="Search">
-					<button type="button">Search</button>
+				<form class="d-flex">
+					<input class="form-control me-2" type="text" name="searchbar" placeholder="Search">
+					<button class="btn btn-primary" type="button">Search</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 <!-- NAVBAR END -->
-<div>
-	<div>
+
+<!-- Home section start -->
+<div class="home">
+	<div class="container">
 		<h5>WELCOME TO MY WORLD</h5>
 		<h1>Visit <span class="changecontent"></span></h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
@@ -68,9 +70,9 @@
 </div>
 <!-- HOME SECTION END -->
 <!-- SECTION BOOK START -->
-<section>
-	<div>
-		<div>
+<section class="book" id="book">
+	<div class="container">
+		<div class="main-text">
 			<h1><span>B</span>ook</h1>
 		</div>
 		<div class="row">
@@ -81,11 +83,11 @@
 			</div>
 			<div class="col-md-6 py-3 py-md-0">
 				<form>
-					<input type="text" placeholder="Where To" required>
-					<input type="text" placeholder="How Many" required>
-					<input type="text" placeholder="Arrivals" required>
-					<input type="text" placeholder="Leaving" required>
-					<textarea rows="5" name="text" placeholder="Enter Your Name and Details"></textarea>
+					<input class="form-control" type="text" placeholder="Where To" required>
+					<input class="form-control" type="text" placeholder="How Many" required>
+					<input class="form-control" type="text" placeholder="Arrivals" required>
+					<input class="form-control" type="text" placeholder="Leaving" required>
+					<textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name and Details"></textarea>
 					<input type="submit" value="Book Now" class="submit" required>
 				</form>
 			</div>
@@ -95,9 +97,9 @@
 <!-- SECTION BOOK END -->
 
 <!-- SECTION PACKAGES START -->
-<section>
+<section class="packages" id="packages">
 	<div class="container">
-		<div>
+		<div class="main-text">
 			<h1><span>P</span>ackages</h1>
 		</div>
 		<div class="row">
@@ -220,9 +222,9 @@
 <!-- Section Package END -->
 
 <!-- SERVICE SECTION START -->
-<section>
+<section class="services" id="services">
 	<div class="container">
-		<div>
+		<div class="main-text">
 			<h1><span>S</span>ervices</h1>
 		</div>
 		<div class="row">
@@ -293,9 +295,9 @@
 <!-- Service section complate -->
 
 <!-- Gallery Section Start -->
-<section>
+<section class="gallery" id="gallery">
 	<div class="container">
-		<div>
+		<div class="main-text">
 			<h1>G<span>allery</span></h1>
 		</div>
 		<div class="row">
@@ -342,9 +344,9 @@
 <!-- Gallery section end -->
 
 <!-- About Section Start -->
-<section>
+<section class="about" id="about">
 	<div class="container">
-		<div class="">
+		<div class="main-text">
 			<h1>About<span>US</span></h1>
 		</div>
 		<div class="row">
@@ -369,7 +371,7 @@
 <!-- About SEction end -->
 
 <!-- Footer SEction Start -->
-<footer>
+<footer id="footer">
 	<h1>T<span>ravel</span></h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 	<div class="social-link">
@@ -379,10 +381,10 @@
 		<i class="fa-brands fa-youtube"></i>
 		<i class="fa-brands fa-pinterest-p"></i>
 	</div>
-	<div>
+	<div class="creit">
 		<p>Designed By <a href="#">Ranjan Rajat</a></p>
 	</div>
-	<div>
+	<div class="copyright">
 		<p>&copy; Copyright Ranjan Rajat. All Right Reserved</p>
 	</div>
 </footer>
